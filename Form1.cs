@@ -273,11 +273,13 @@ namespace UpdaterMain
                     {
                         controler.Kill();
                         MessageBox.Show("An error occurred while checking for updates", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Process.Start(Path.Combine(appDirectory, "ytdl-gui.exe"));
                     }
                     else
                     {
                         controler.Kill();
                         MessageBox.Show("Wyst¹pi³ b³¹d podczas sprawdzania aktualizacji", "B³¹d", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Process.Start(Path.Combine(appDirectory, "ytdl-gui.exe"));
                     }
                     this.Close();
                     return;
@@ -292,11 +294,13 @@ namespace UpdaterMain
                     {
                         controler.Kill();
                         MessageBox.Show("No updates available, you have the latest version of the program: " + remoteVersion, "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Process.Start(Path.Combine(appDirectory, "ytdl-gui.exe"));
                     }
                     else
                     {
                         controler.Kill();
                         MessageBox.Show("Brak dostêpnych aktualizacji, posiadasz najnowsz¹ wersjê programu: " + remoteVersion, "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Process.Start(Path.Combine(appDirectory, "ytdl-gui.exe"));
                     }
                     this.Close();
                     return;

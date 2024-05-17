@@ -16,7 +16,12 @@
 		<Copyright>Jakub Michalski</Copyright>
 		<PackageProjectUrl>https://windowsbase.pl</PackageProjectUrl>
 		<PackageIcon>g25.png</PackageIcon>
+		<ApplicationIcon>g25.ico</ApplicationIcon>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="g25.ico" />
+	</ItemGroup>
 
 	<ItemGroup>
 	  <None Include="..\..\..\..\Pulpit\g25.png">
