@@ -392,12 +392,10 @@ namespace UpdaterMain
             {
                 if (languageSelected == 1)
                 {
-                    controler.Kill();
                     MessageBox.Show($"An error occured: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    controler.Kill();
                     MessageBox.Show($"Wyst¹pi³ b³¹d: {ex.Message}", "B³¹d", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 this.Close();
